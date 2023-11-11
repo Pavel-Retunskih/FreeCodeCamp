@@ -8,7 +8,8 @@
         <title>Registation Form</title>
     </head>
     <body>
-        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <div id="container">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form action="" id="survey-form">
             <fieldset>
@@ -31,9 +32,9 @@
             </fieldset>
             <fieldset>
                 <p>Would you recommend freeCodeCamp to a friend?</p>
-                <label for="definitely"><input type="radio" id="definitely" name="user-recommend" class="input-radio" value="definitely" checked> Definitely</label>
-                <label for="maybe"><input type="radio" id="maybe" name="user-recommend" class="input-radio" value="maybe"> Maybe</label>
-                <label for="not_sure"><input type="radio" id="not_sure" name="user-recommend" class="input-radio" value="not_sure"> Not sure</label>
+                <label for="definitely"><input type="radio" id="definitely" name="user-recommend" class="input-radio inline" value="definitely" checked> Definitely</label>
+                <label for="maybe"><input type="radio" id="maybe" name="user-recommend" class="input-radio inline" value="maybe"> Maybe</label>
+                <label for="not_sure"><input type="radio" id="not_sure" name="user-recommend" class="input-radio inline" value="not_sure"> Not sure</label>
             </fieldset>
             <fieldset>
                 <label for="">What is your favorite feature of freeCodeCamp?
@@ -48,17 +49,17 @@
             </fieldset>
             <fieldset>
                 <p>What would you like to see improved? (Check all that apply)</p>
-                <label for="front-end"><input type="checkbox" value="1"   name="front" id="front-end"> Front-end Projects</label>
-                <label for="back-end"><input type="checkbox" value="2" name="back" id="back-end"> Back-end Projects</label>
-                <label for="visualization"><input type="checkbox" value="3" name="visualization" id="visualization"> Data Visualization</label>
-                <label for="challenges"><input type="checkbox" value="4" name="challenges" id="challenges"> Challenges</label>
-                <label for="open_source"><input type="checkbox" value="5" name="open_source" id="open_source"> Open Source Community</label>
-                <label for="gitter"><input type="checkbox" value="6" name="gitter" id="gitter"> Gitter help rooms</label>
-                <label for="videos"><input type="checkbox" value="7" name="videos" id="videos"> Videos</label>
-                <label for="meetups"><input type="checkbox" value="8" name="meetups" id="meetups"> City Meetups</label>
-                <label for="wiki"><input type="checkbox" value="9" name="wiki" id="wiki"> Wiki</label>
-                <label for="forum"><input type="checkbox" value="10" name="forum" id="forum"> Forum</label>
-                <label for="courses"><input type="checkbox" value="11" name="courses" id="courses"> Additional Courses</label>
+                <label for="front-end"><input type="checkbox" value="1"   name="front" id="front-end" class="inline"> Front-end Projects</label>
+                <label for="back-end"><input type="checkbox" value="2" name="back" id="back-end" class="inline"> Back-end Projects</label>
+                <label for="visualization"><input type="checkbox" value="3" name="visualization" id="visualization" class="inline"> Data Visualization</label>
+                <label for="challenges"><input type="checkbox" value="4" name="challenges" id="challenges" class="inline"> Challenges</label>
+                <label for="open_source"><input type="checkbox" value="5" name="open_source" id="open_source" class="inline"> Open Source Community</label>
+                <label for="gitter"><input type="checkbox" value="6" name="gitter" id="gitter" class="inline"> Gitter help rooms</label>
+                <label for="videos"><input type="checkbox" value="7" name="videos" id="videos" class="inline"> Videos</label>
+                <label for="meetups"><input type="checkbox" value="8" name="meetups" id="meetups" class="inline"> City Meetups</label>
+                <label for="wiki"><input type="checkbox" value="9" name="wiki" id="wiki" class="inline"> Wiki</label>
+                <label for="forum"><input type="checkbox" value="10" name="forum" id="forum" class="inline"> Forum</label>
+                <label for="courses"><input type="checkbox" value="11" name="courses" id="courses" class="inline"> Additional Courses</label>
             </fieldset>
             <fieldset>
                 <label for="">Any comments or suggestions?
@@ -67,5 +68,6 @@
             </fieldset>
             <input type="submit" id="submit" value="Submit" />
         </form>
+        </div>
     </body>
 </html>
