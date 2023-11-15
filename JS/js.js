@@ -130,16 +130,14 @@ console.log(carrot); // Should display 'carrot'
 //-----------------------------------------------------
 // Only change code below this line
 class Thermostat{
-  constructor(temperature){
-    this._temp = temperature 
+  constructor (temp){
+    this._temp = temp
   }
-   
-  get getter (){
-    return this.temp
-  }
-
-  set setter (temperature){
-    this._temp = temperature * 9.0 / 5 + 32
+  get temperature (){
+    return 5/9 * (this._temp - 32)
+  };
+  set temperature(updateTemp){
+    return this._temp = updateTemp * 9.0 / 5 + 32
   }
 }
 // Only change code above this line
